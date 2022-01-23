@@ -1,0 +1,16 @@
+{
+  "name": "win3.css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "start": "sass -w src/index.scss:dist/win3.css",
+    "build": "sass src/index.scss dist/win3.css && cp -r src/icons dist",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "sass": "^1.49.0"
+  }
+}

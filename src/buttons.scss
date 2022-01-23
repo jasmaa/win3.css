@@ -1,0 +1,43 @@
+.button-20 {
+  image-rendering: crisp-edges;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  aspect-ratio: 1 / 1;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.minimize {
+  @extend .button-20;
+  background-image: url("./icons/minimize.png");
+
+  &:active {
+    background-image: url("./icons/minimize.png");
+  }
+}
+
+.up {
+  @extend .button-20;
+  background-image: url("./icons/up.png");
+
+  &:active {
+    background-image: url("./icons/up-active.png");
+  }
+}
+
+.down {
+  @extend .button-20;
+  background-image: url("./icons/down.png");
+
+  &:active {
+    background-image: url("./icons/down-active.png");
+  }
+}

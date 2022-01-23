@@ -1,0 +1,31 @@
+.window {
+  background-color: white;
+  box-shadow:
+    0 0 0 1px black,
+    0 0 0 3px lightgray,
+    0 0 0 4px black;
+
+  & > .header {
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    background-color: navy;
+    border-bottom: 1px solid black;
+
+    & > .header-left {
+      display: flex;
+    }
+    & > .header-title {
+      display: flex;
+      color: white;
+    }
+    & > .header-right {
+      display: flex;
+    }
+  }
+
+  & > .body {
+    padding: 5px;
+  }
+
+}
