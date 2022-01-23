@@ -8,3 +8,7 @@ Windows 3 UI elements
 yarn install
 yarn start
 ```
+
+## Acknowledgements
+
+- [Pixel Arial 11 font](https://www.dafont.com/pixel-arial-11.font) by Max

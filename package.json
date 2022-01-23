@@ -6,7 +6,7 @@
   "dependencies": {},
   "scripts": {
     "start": "sass -w src/index.scss:dist/win3.css",
-    "build": "sass src/index.scss dist/win3.css && cp -r src/icons dist",
+    "build": "sass src/index.scss dist/win3.css && cp -r src/icons dist && cp -r src/fonts dist",
     "clean": "rimraf dist"
   },
   "devDependencies": {

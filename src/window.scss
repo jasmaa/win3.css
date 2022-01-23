@@ -1,5 +1,8 @@
 .window {
+  display: flex;
+  flex-direction: column;
   background-color: white;
+  font-family: PixelArial11, Arial, Helvetica, sans-serif;
   box-shadow:
     0 0 0 1px black,
     0 0 0 3px lightgray,
@@ -11,13 +14,17 @@
     justify-content: space-between;
     background-color: navy;
     border-bottom: 1px solid black;
+    user-select: none;
 
     & > .header-left {
       display: flex;
     }
     & > .header-title {
       display: flex;
+      justify-content: center;
+      align-items: center;
       color: white;
+      font-size: 10px;
     }
     & > .header-right {
       display: flex;
@@ -25,7 +32,7 @@
   }
 
   & > .body {
-    padding: 5px;
+    font-size: 10px;
+    height: 100%;
   }
-
 }
