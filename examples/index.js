@@ -3,17 +3,18 @@ const windowFrame = document.getElementById('window-frame')
 const windowHeader = document.getElementById('window-header');
 
 document.body.style.overflow = 'hidden';
+windowFrame.style.top = '8em';
+
 initializeDraggableWindow(windowFrame, windowHeader);
 
 function initializeDraggableWindow(windowFrame, windowHeader) {
   windowFrame.style.position = 'absolute';
-  windowFrame.style.top = '8em';
   windowHeader.style.cursor = 'move';
 
   let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
 
   windowHeader.onmousedown = e => {
-    if (e.target === windowHeader) {
+    if (e.target.nodeName !== 'BUTTON') {
       e.preventDefault();
 
       pos3 = e.clientX;
