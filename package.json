@@ -5,9 +5,9 @@
   "license": "MIT",
   "dependencies": {},
   "scripts": {
-    "start": "sass -w src/index.scss:dist/win3.css",
-    "build": "sass src/index.scss dist/win3.css && cp -r src/icons dist && cp -r src/fonts dist",
-    "clean": "rimraf dist"
+    "start": "sass -w src/index.scss:dist/win3/win3.css",
+    "build": "sass src/index.scss dist/win3/win3.css && cp -r src/icons dist/win3 && cp -r src/fonts dist/win3",
+    "clean": "rimraf dist/win3"
   },
   "devDependencies": {
     "rimraf": "^3.0.2",

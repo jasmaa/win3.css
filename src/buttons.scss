@@ -1,4 +1,4 @@
-.button-20 {
+.header-btn {
   image-rendering: crisp-edges;
   width: 20px;
   height: 20px;
@@ -16,7 +16,7 @@
 }
 
 .minimize {
-  @extend .button-20;
+  @extend .header-btn;
   background-image: url("./icons/minimize.png");
 
   &:active {
@@ -25,7 +25,7 @@
 }
 
 .up {
-  @extend .button-20;
+  @extend .header-btn;
   background-image: url("./icons/up.png");
 
   &:active {
@@ -34,7 +34,7 @@
 }
 
 .down {
-  @extend .button-20;
+  @extend .header-btn;
   background-image: url("./icons/down.png");
 
   &:active {

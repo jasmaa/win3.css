@@ -1,30 +1,58 @@
-<html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="win3.css" />
+  <link rel="stylesheet" type="text/css" href="win3/win3.css" />
+  <meta charset="UTF-8">
   <title>win3.css - Demo</title>
 </head>
 
 <body>
   <div style="display: flex; flex-direction: column; align-items: center;">
+
     <h1 style="padding-bottom: 2em;">win3.css</h1>
-    <div id="window-frame" class="window" style="width: 30em; height: 20em;">
-      <div id="window-header" class="header">
+
+    <div id="window-frame-1" class="window" style="width: 30em; height: 20em;">
+      <div id="window-header-1" class="header">
         <div class="header-left">
-          <button class="button-20 minimize"></button>
+          <button class="header-btn minimize"></button>
         </div>
         <div class="header-title">
           <span>win3.css - Demo</span>
         </div>
         <div class="header-right">
-          <button class="button-20 up"></button>
-          <button class="button-20 down"></button>
+          <button class="header-btn up"></button>
+          <button class="header-btn down"></button>
         </div>
       </div>
       <div class="body">
+        <div class="navbar">
+          <div class="nav-item"><span>File</span></div>
+          <div class="nav-item"><span>Options</span></div>
+          <div class="nav-item"><span>Window</span></div>
+          <div class="nav-item"><span>Help</span></div>
+        </div>
         <p style="padding: 1em;">This is a demo.</p>
       </div>
     </div>
+  </div>
+
+  <div id="window-frame-2" class="window" style="width: 50em; height: 30em;">
+    <div id="window-header-2" class="header">
+      <div class="header-left">
+        <button class="header-btn minimize"></button>
+      </div>
+      <div class="header-title">
+        <span>win3.css - example.com</span>
+      </div>
+      <div class="header-right">
+        <button class="header-btn up"></button>
+        <button class="header-btn down"></button>
+      </div>
+    </div>
+    <div class="body">
+      <iframe style="width: 100%; height: 100%;" src="https://example.com"></iframe>
+    </div>
+  </div>
   </div>
 
   <script src="./index.js"></script>

@@ -1,11 +1,19 @@
 // Adapted from: https://www.w3schools.com/howto/howto_js_draggable.asp
-const windowFrame = document.getElementById('window-frame')
-const windowHeader = document.getElementById('window-header');
+const windowFrame1 = document.getElementById('window-frame-1');
+const windowHeader1 = document.getElementById('window-header-1');
+const windowFrame2 = document.getElementById('window-frame-2');
+const windowHeader2 = document.getElementById('window-header-2');
+
+let zIndex = 9999;
 
 document.body.style.overflow = 'hidden';
-windowFrame.style.top = '8em';
+windowFrame1.style.left = '2%';
+windowFrame1.style.top = '2%';
+windowFrame2.style.left = '40%';
+windowFrame2.style.top = '20%';
 
-initializeDraggableWindow(windowFrame, windowHeader);
+initializeDraggableWindow(windowFrame1, windowHeader1);
+initializeDraggableWindow(windowFrame2, windowHeader2);
 
 function initializeDraggableWindow(windowFrame, windowHeader) {
   windowFrame.style.position = 'absolute';
@@ -19,6 +27,8 @@ function initializeDraggableWindow(windowFrame, windowHeader) {
 
       pos3 = e.clientX;
       pos4 = e.clientY;
+      windowFrame.style.zIndex = `${zIndex}`;
+      zIndex++;
 
       document.onmousemove = e => {
         e.preventDefault();
