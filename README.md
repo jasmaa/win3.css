@@ -4,7 +4,7 @@ Almost-Windows 3 UI elements in the browser.
 
 ## Usage
 
-Download the [latest distribution](https://github.com/jasmaa/win3.css/releases").
+Download the [latest distribution](https://github.com/jasmaa/win3.css/releases).
 
 Unzip and copy the contents of the archive to a folder of choice on your website (ex. win3).
 
