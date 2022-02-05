@@ -2,6 +2,7 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="win3/win3.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
   <meta charset="UTF-8">
   <title>win3.css - Demo</title>
 </head>
@@ -11,27 +12,47 @@
 
     <h1 style="padding-bottom: 2em;">win3.css</h1>
 
-    <div id="window-frame-1" class="window" style="width: 30em; height: 20em;">
+    <div id="window-frame-1" class="window" style="width: 40em; height: 30em;">
       <div id="window-header-1" class="header">
         <div class="header-left">
           <button class="header-btn minimize"></button>
         </div>
         <div class="header-title">
-          <span>win3.css - Demo</span>
+          <span>win3.css - Getting Started</span>
         </div>
         <div class="header-right">
           <button class="header-btn up"></button>
           <button class="header-btn down"></button>
         </div>
       </div>
-      <div class="body">
-        <div class="navbar">
-          <div class="nav-item"><span>File</span></div>
-          <div class="nav-item"><span>Options</span></div>
-          <div class="nav-item"><span>Window</span></div>
-          <div class="nav-item"><span>Help</span></div>
+      <div class="navbar">
+        <div class="nav-item"><span>File</span></div>
+        <div class="nav-item"><span>Options</span></div>
+        <div class="nav-item"><span>Window</span></div>
+        <div class="nav-item"><span>Help</span></div>
+      </div>
+      <div class="body" style="padding: 1em;">
+        <div class="section">
+          <h2>About</h2>
+          <p>
+            win3.css provides almost-Windows 3 windows in your browser.
+          </p>
         </div>
-        <p style="padding: 1em;">This is a demo.</p>
+
+        <div class="section">
+          <h2>Usage</h2>
+          <p>Download and unzip the <a href="https://github.com/jasmaa/win3.css/releases">latest distribution</a>.</p>
+          <p>Copy the contents of the win3 folder into your website.</p>
+          <p>Reference the win3.css stylesheet:</p>
+          <pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel="stylesheet" type="text/css" href="win3/win3.css" /&gt;
+  &lt;/head&gt;
+  ...
+&lt;html&gt;
+        </pre>
+        </div>
       </div>
     </div>
   </div>
@@ -42,19 +63,123 @@
         <button class="header-btn minimize"></button>
       </div>
       <div class="header-title">
-        <span>win3.css - example.com</span>
+        <span>win3.css - Samples</span>
       </div>
       <div class="header-right">
         <button class="header-btn up"></button>
         <button class="header-btn down"></button>
       </div>
     </div>
-    <div class="body">
-      <iframe style="width: 100%; height: 100%;" src="https://example.com"></iframe>
+    <div class="navbar">
+      <div class="nav-item"><span>File</span></div>
+      <div class="nav-item"><span>Options</span></div>
+      <div class="nav-item"><span>Window</span></div>
+      <div class="nav-item"><span>Help</span></div>
+    </div>
+    <div class="body" style="padding-left: 4em; padding-right: 4em;">
+
+      <div class="section">
+        <h2>Simple Window</h2>
+        <div class="window" style="height: 20em;">
+          <div class="header">
+            <div class="header-left"></div>
+            <div class="header-title">Simple Window</div>
+            <div class="header-right"></div>
+          </div>
+          <div class="body" style="padding: 1em;">
+            <p>This is a demo</p>
+          </div>
+        </div>
+        <pre>
+&lt;div class="window" style="height: 20em;"&gt;
+  &lt;div class="header"&gt;
+    &lt;div class="header-left"&gt;&lt;/div&gt;
+    &lt;div class="header-title"&gt;Simple Window&lt;/div&gt;
+    &lt;div class="header-right"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="body" style="padding: 1em;"&gt;
+    &lt;p&gt;This is a demo&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+      </div>
+
+      <div class="section">
+        <h2>Header Buttons</h2>
+        <div class="window" style="height: 20em;">
+          <div class="header">
+            <div class="header-left">
+              <button class="header-btn minimize"></button>
+            </div>
+            <div class="header-title">Header Buttons</div>
+            <div class="header-right">
+              <button class="header-btn down"></button>
+              <button class="header-btn up"></button>
+            </div>
+          </div>
+          <div class="body" style="padding: 1em;">
+            <p>This is a demo</p>
+          </div>
+        </div>
+        <pre>
+&lt;div class="window" style="height: 20em;"&gt;
+  &lt;div class="header"&gt;
+    &lt;div class="header-left"&gt;
+      &lt;button class="header-btn minimize"&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="header-title"&gt;Header Buttons&lt;/div&gt;
+    &lt;div class="header-right"&gt;
+      &lt;button class="header-btn up"&gt;&lt;/button&gt;
+      &lt;button class="header-btn down"&gt;&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="body" style="padding: 1em;"&gt;
+    &lt;p&gt;This is a demo&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+      </div>
+
+      <div class="section">
+        <h2>Navbar</h2>
+        <div class="window" style="height: 20em;">
+          <div class="header">
+            <div class="header-left"></div>
+            <div class="header-title">Navbar</div>
+            <div class="header-right"></div>
+          </div>
+          <div class="navbar">
+            <div class="nav-item"><span>File</span></div>
+            <div class="nav-item"><span>Options</span></div>
+            <div class="nav-item"><span>Window</span></div>
+            <div class="nav-item"><span>Help</span></div>
+          </div>
+          <div class="body" style="padding: 1em;">
+            <p>This is a demo</p>
+          </div>
+        </div>
+        <pre>
+&lt;div class="window" style="height: 20em;"&gt;
+  &lt;div class="header"&gt;
+    &lt;div class="header-left"&gt;&lt;/div&gt;
+    &lt;div class="header-title"&gt;Navbar&lt;/div&gt;
+    &lt;div class="header-right"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+    &lt;div class="navbar"&gt;
+      &lt;div class="nav-item"&gt;&lt;span&gt;File&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="nav-item"&gt;&lt;span&gt;Options&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="nav-item"&gt;&lt;span&gt;Window&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="nav-item"&gt;&lt;span&gt;Help&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;div class="body" style="padding: 1em;"&gt;
+    &lt;p&gt;This is a demo&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+      </div>
+
     </div>
   </div>
-  </div>
-
   <script src="./index.js"></script>
 </body>
 

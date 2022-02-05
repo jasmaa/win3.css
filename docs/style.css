@@ -1,0 +1,10 @@
+pre {
+  font-size: 1.2em;
+  background-color: gainsboro;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.section {
+  margin-bottom: 4em;
+}

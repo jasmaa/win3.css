@@ -9,8 +9,8 @@ let zIndex = 9999;
 document.body.style.overflow = 'hidden';
 windowFrame1.style.left = '2%';
 windowFrame1.style.top = '2%';
-windowFrame2.style.left = '40%';
-windowFrame2.style.top = '20%';
+windowFrame2.style.left = '45%';
+windowFrame2.style.top = '30%';
 
 initializeDraggableWindow(windowFrame1, windowHeader1);
 initializeDraggableWindow(windowFrame2, windowHeader2);

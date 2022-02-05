@@ -7,6 +7,8 @@ Windows 3 UI elements
 ```
 yarn install
 yarn start
+
+# Open docs/index.html in browser
 ```
 
 ## Acknowledgements
