@@ -5,11 +5,14 @@
   "license": "MIT",
   "dependencies": {},
   "scripts": {
-    "start": "sass -w src/index.scss:dist/win3/win3.css",
-    "build": "sass src/index.scss dist/win3/win3.css && cp -r src/icons dist/win3 && cp -r src/fonts dist/win3",
-    "clean": "rimraf dist/win3"
+    "prestart": "yarn build && cp -r dist docs/win3",
+    "start": "sass -w src/index.scss:docs/win3/win3.css",
+    "build": "sass src/index.scss dist/win3.css && cp -r src/icons dist && cp -r src/fonts dist",
+    "deploy": "yarn prestart && gh-pages -d docs --no-history",
+    "clean": "rimraf docs/win3 dist"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "rimraf": "^3.0.2",
     "sass": "^1.49.0"
   }
